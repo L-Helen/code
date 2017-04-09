@@ -1,0 +1,53 @@
+<ion-side-menus>
+    <ion-side-menu side="left" width="460">
+        <div class="list">
+            <div class="item item-divider">校 历</div>
+            <a href="" class="item">2016-2017学年校历</a>
+            <a href="" class="item">2016-2017学年上课时间</a>
+            <a href="" class="item">2017-2018学年校历</a>
+            <a href="" class="item">2017-2018学年上课时间</a>
+        </div>
+
+    </ion-side-menu>
+
+
+    <ion-side-menu-content>
+        <div class="bar bar-header bar-balanced">
+            <!--<a class="Btn icon ion-android-menu"></a>-->
+            <button class="button button-icon icon ion-android-menu"  menu-toggle="left">
+
+            </button>
+            <h1 class="title">消息通知</h1>
+        </div>
+        <ion-content class="has-header has-footer info">
+
+            <ion-slide-box auto-play="true" slide-interval="3000" show-pager="true" does-continue="true" pager-click="pageClick(index)">
+                <ion-slide>
+                    <div class="box">
+                        <!--<p>关注你的成功之路</p>-->
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box"></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box"></div>
+                </ion-slide>
+            </ion-slide-box>
+            <ion-refresher ng-if="hasData" pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+
+            <div class="list">
+                <a class="item item-avatar item-icon-right" ng-repeat="item in infolist" href="#">
+                    <img ng-src="{{item.img}}">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.text}}</p>
+                    <i class="icon ion-chevron-right"></i>
+                </a>
+            </div>
+
+        </ion-content>
+
+        <div ng-include="'tpl/include/footer.html'" ></div>
+
+    </ion-side-menu-content>
+</ion-side-menus>

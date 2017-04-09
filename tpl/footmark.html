@@ -1,0 +1,64 @@
+<div class="bar bar-header bar-balanced">
+    <!--<a class="Btn icon ion-android-menu"></a>-->
+    <button class="button button-icon icon ion-android-menu"></button>
+    <h1 class="title">足迹</h1>
+</div>
+<ion-content class="has-header has-footer footmark" >
+    <div class="pic"></div>
+
+    <ion-refresher ng-if="hasData" pulling-text="下拉刷新" on-refresh="doRefresh()"></ion-refresher>
+
+    <ul class="list ">
+        <li class="item item-avatar">
+            <img src="img/footmark/zhang.png">
+            张小明
+            <span class="item-note">9月28日</span>
+        </li>
+        <div class="item">
+            <p>编点评：除了背景墙的大面蓝色运用，沙发和置物架子柜子都是奶白色或是白色的，颜色是比较简单和平淡的。而这时运用了色...</p>
+
+                <img src="img/footmark/img1.jpg" alt="">
+                <img src="img/footmark/img2.jpg" alt="">
+                <img src="img/footmark/img3.jpg" alt="">
+        </div>
+        <li class="item Iconbar">
+            <i class="icon ion-forward"></i>            
+            <i class="icon icon-del"></i>
+            <i class="icon icon-hand"></i>
+        </li>
+        <a class="item item-icon-left   " href="#">
+	    	<i class="icon icon-hand"></i>
+	    	<span>莫弃：</span> 姐，还在长沙吗，加我V信：yqx096,
+  		</a>
+        <a class="item item-icon-left   " href="#">
+            <i class="icon icon-eye"></i>
+            <span>你不懂我不怪我 :</span> 西施与杨贵妃
+        </a>
+    </ul>
+    <div class="list">
+        <!--<label class="item item-input"> list-inset-->
+            <!--<input type="text" placeholder=" 我也来说一句......">-->
+            <!--<i class="icon icon-face"></i>-->
+        <!--</label>-->
+        <div class="item item-input-inset">
+            <label class="item-input-wrapper">
+                <input type="text" placeholder=" 我也来说一句......">
+            </label>
+            <button class="button">
+                <i class="icon icon-face"></i>
+            </button>
+        </div>
+    </div>
+
+    <ion-infinite-scroll
+            immediate-check="false"
+            on-infinite="loadMore()">
+    </ion-infinite-scroll>
+
+    <p ng-hide='hasMore' class="text-center energized">没有更多数据了</p>
+    <br/><br/>
+
+</ion-content>
+
+
+<div ng-include="'tpl/include/footer.html'" ></div>

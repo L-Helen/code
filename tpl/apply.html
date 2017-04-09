@@ -1,0 +1,43 @@
+<ion-side-menus>
+
+    <ion-side-menu side="left" width="460">
+        <div class="list">
+            <div class="item item-divider">应用</div>
+        </div>
+
+    </ion-side-menu>
+
+
+    <ion-side-menu-content>
+        <div class="bar bar-header bar-balanced">
+        <!--<a class="Btn icon ion-android-menu"></a>-->
+        <button class="button button-icon icon ion-android-menu"  menu-toggle="left"></button>
+        <h1 class="title">应用</h1>
+        </div>
+        <ion-content class="has-header has-footer Apply">
+            <ion-slide-box auto-play="true" slide-interval="3000" show-pager="true" does-continue="true"
+                           pager-click="pageClick(index)">
+                <ion-slide>
+                    <div class="box">
+                        <!--<p>关注你的成功之路</p>-->
+                    </div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box"></div>
+                </ion-slide>
+                <ion-slide>
+                    <div class="box"></div>
+                </ion-slide>
+            </ion-slide-box>
+            <div class="row" ng-repeat="item in applylist">
+                <div class="col" ng-repeat="list in item">
+                    <div class="Imgbox"><img ng-src="img/app-list/{{list.img}}" alt=""></div>
+                    <h2>{{list.title}}</h2>
+                </div>
+            </div>
+        </ion-content>
+    <div ng-include="'tpl/include/footer.html'"></div>
+
+  </ion-side-menu-content>
+
+</ion-side-menus>
