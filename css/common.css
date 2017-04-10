@@ -1,0 +1,128 @@
+html{	
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+	font-family:arial,"微软雅黑";
+}
+a{-webkit-tap-highlight-color:transparent;}
+input {-webkit-appearance:none}
+
+/*公共区域样式*/
+.bar.bar-header{
+	height: 2.2rem;
+	padding: 0.8rem;
+	background-color: #3caf38;
+	color: #fff;
+}
+.bar.bar-header .title{
+	font-size: 0.8rem;
+	height: 2.2rem;
+	line-height: 2.2rem;
+}
+.bar.bar-header .icon::before{
+	font-size: 1.15rem;
+}
+
+.has-header{
+	top:2.2rem;
+}
+.has-footer{
+	bottom:2.3rem;
+}
+
+.bar.bar-footer{
+	height: 2.3rem;
+	border-top: 2px solid #dcdcdc;
+	padding: 0;
+
+}
+
+.bar.bar-footer .tabs{
+	height: 2.3rem;
+	color: #696969;
+	background: #f8f8f8;
+	top:0;
+}
+.bar.bar-footer .tabs .tab-item{
+	font-size: 0.55rem;
+	line-height: 1.6rem;
+	max-width: 25%;
+}
+.tab-item.tab-item-active{
+	color: #43ab3c;
+}
+.bar.bar-footer .tabs .tab-item .icon{
+	height: 0.95rem;
+	font-size: 1.2rem;
+	width: 1.2rem;
+}
+
+.slider{
+	height: 7.85rem;
+	background: #ccc;
+	margin-bottom: 0.3rem;
+}
+
+.slider-slide:nth-of-type(1){
+	background: url("../img/banner/banner2.png") no-repeat center /cover;
+	background-size: 100% 100%;
+}
+.slider-slide:nth-of-type(2){
+	background: url("../img/banner/banner1.png") no-repeat center /cover;
+}
+.slider-slide:nth-of-type(3){
+	background: url("../img/banner/banner3.png") no-repeat center /cover;
+}
+.slider-pager .slider-pager-page {
+	width: 0.6rem;
+	height: 0.6rem;
+	/*color: #3CAF38;*/
+}
+.slider-pager .slider-pager-page  .icon{
+	/*小点点的样式*/
+	font-size: 0.6rem;
+}
+
+/*侧边栏样式*/
+.view .menu.menu-left{
+	background: #ccc ;
+
+}
+.view .menu .list{
+}
+.view .button-small{
+	padding: 0.1rem 0.25rem;
+	font-size: 0.6rem;
+	line-height: 0.8rem;
+	margin-top: 0.25rem;
+	margin-left: 0.25rem;
+}
+.view .menu .item{
+	font-size: 0.6rem;
+	color:#666;
+	line-height: 1rem;margin-top: 0.5rem;
+	/*padding-left: 0.6rem;*/
+	/*text-align: center;*/
+	text-indent: 1em;
+
+
+}
+.view .menu .item:hover{
+	color: #0c60ee;
+}
+.view .menu .list .item-divider{
+	color: #fff;
+	text-align: center;
+	height: 6rem;
+	line-height:6rem;
+	font-size: 1.2rem;
+	margin:  0;
+	margin-top: 0.5rem;
+	background:url("../img/info_img3.jpg") no-repeat left bottom;
+
+}
+
