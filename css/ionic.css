@@ -7563,7 +7563,7 @@ textarea {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 6px 0 5px 16px; }
+  padding: 0px 0 0px 16px; }
   .item-input input {
     -webkit-border-radius: 0;
     border-radius: 0;
@@ -7660,7 +7660,7 @@ textarea {
 
 .input-label {
   display: table;
-  padding: 7px 10px 7px 0px;
+  padding: 0px 10px 0px 0px;
   max-width: 200px;
   width: 35%;
   color: #444;
