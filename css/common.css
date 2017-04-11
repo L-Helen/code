@@ -15,7 +15,8 @@ input {-webkit-appearance:none}
 .bar.bar-header{
 	height: 2.2rem;
 	line-height: 2.2rem;
-	padding: 0.8rem;
+	padding: 0;
+	padding-left: 0.75rem;
 	background-color: #3caf38;
 	color: #fff;
 }
@@ -27,6 +28,7 @@ input {-webkit-appearance:none}
 .bar.bar-header button{
 	height:0.8rem;
 	line-height: 0.8rem;
+	margin-left:0.75rem;
 }
 .bar.bar-header .icon::before{
 	font-size: 1.4rem;
